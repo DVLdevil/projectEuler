@@ -1,10 +1,11 @@
 import argparse
-from problems.p1 import p_1
+# from problems.p1 import *
+from problems import *
 
 def main(problem_number, show_working):
 
     if problem_number == '1':
-        p_1()
+        p1()
     
     
 if __name__ == '__main__':
