@@ -1,12 +1,11 @@
 import argparse
-# from problems.p1 import *
-from problems import *
+from problems1to20 import *
+
 
 def main(problem_number, show_working):
 
-    if problem_number == '1':
-        p1()
-    
+    eval("p"+problem_number+"()")
+
     
 if __name__ == '__main__':
     # DO NOT MODIFY CODES HERE
