@@ -11,6 +11,5 @@ def p1():
         if(i%3 or i%5):
             sum += i
             
-            
-    print("answer is " + str(sum))
+    print("\nanswer is " + str(sum))
     
