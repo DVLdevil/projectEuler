@@ -31,19 +31,18 @@ def p2():
         n1 = n2
         n2 = temp
     print("\nanswer is " + str(sum))    
+   
+def isPalindrome(number):
+    front = str(number)[0:len(str(number))/2]
+    back = "".join(reversed(str(number)[len(str(number))/2:]))
+    print(front)
+    print(back)
+   
+def p4():
+    description = "A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99. \nFind the largest palindrome made from the product of two 3-digit numbers."
+    n1 = n2 = 999
     
-def p3():
-    description = "The prime factors of 13195 are 5, 7, 13 and 29.\nWhat is the largest prime factor of the number  600851475143 ?"
-    
-    print(description)
-    num = 600851475143
-    
-    # method 1
-    max = factor = 2
-    while(factor < num):
-        if num%factor ==0:
-            num = num/factor
-            if factor > max:
-                max = factor
-        factor += 1
-    print("\nanswer is " + str(num))    
+    product = n1*n2
+    max = 1
+    if(isPalindrome(product) and product > max):
+        max = product
