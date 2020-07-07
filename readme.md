@@ -5,4 +5,4 @@ to use:
 2. python main.py problem_number 
 
 Description of problem will be printed out
-Following after, the answer will be printed below
+Following the description, the answer will be printed below
